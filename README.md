@@ -9,11 +9,21 @@ Developed 1989-1991 by Udi Manber, Sun Wu et al. at the University of Arizona.
 Usage
 =====
 
-Type
+search for "foo" in all files in the present directory:
+
+    agrep foo *
+
+
+search for "miscelanos" within cost=3 errors (each insertion, deletion, or substitution costs "1"):
+
+    agrep -3 miscelanos *
+
+
+
+built-in help:
 
     agrep
 
-to get the six built-in help pages.
 
 ```
            Approximate Pattern Matching GREP -- Get Regular Expression
@@ -52,9 +62,11 @@ The present repository contains three different branches.
 
 Installation
 ============
+You can make a full or shallow clone of the repository:
 
 ```
 git clone git@github.com:Wikinaut/agrep.git
+git clone --depth 1 git@github.com:Wikinaut/agrep.git
 cd agrep
 make
 ```
@@ -65,9 +77,8 @@ Algorithms
 
 * [Wu, S., Manber, U.: "Agrep - A Fast Approximate Pattern-Matching Tool", 1992.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.48.8488)
 * [Wu, S., Manber, U.: "Fast Text Searching With Errors", 1991.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.20.8854)
-* see [agrep.algorithms]((https://github.com/Wikinaut/agrep/blob/master/agrep.algorithms)
-* see [/docs](https://github.com/Wikinaut/agrep/blob/master/docs)
-* see [readme](https://github.com/Wikinaut/agrep/blob/master/readme)
+* see [agrep.algorithms](https://github.com/Wikinaut/agrep/blob/master/agrep.algorithms)
+* see [directory /docs](https://github.com/Wikinaut/agrep/blob/master/docs)
 
 
 COPYRIGHT
